@@ -1,0 +1,17 @@
+mixin NavbarFoodwagon
+  header.navbar-light.py-3
+    .navbar-top
+      .container
+        .d-flex.justify-content-between.align-items-center
+          .d-flex.align-items-center
+            a.navbar-brand.d-inline-flex(href='index.html')
+              img.d-inline-block(src=`${CWD}assets/img/gallery/logo.svg`  alt='logo')
+              span.text-1000.fs-0.fw-bold.ms-2 foodwaGon
+          .d-none.d-lg-block
+            p.mb-0.fs--1.fw-bold.text-center Deliver to: 
+              i.fas.fa-map-marker-alt.text-warning.mx-2
+              span.fw-normal Current Location 
+              span Mirpur 1 Bus Stand, Dhaka
+          form.d-flex
+            input.form-control.me-2(type='search' placeholder='Search Food' aria-label='Search')
+            button.btn.btn-white(type='submit') Login

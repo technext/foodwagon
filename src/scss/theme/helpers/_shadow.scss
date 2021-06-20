@@ -1,0 +1,8 @@
+.shadow-transition {
+  box-shadow:  0 1.5625rem 2.8125rem rgba($gray-900, .075);
+  transition: box-shadow 0.4s ease;
+}
+
+.shadow-warning {
+  box-shadow: 0 0 4rem rgba($warning, 0.5)!important;
+}
