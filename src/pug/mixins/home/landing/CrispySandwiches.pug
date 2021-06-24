@@ -1,0 +1,17 @@
+append variables
+  -
+    var sandwich = [
+      {
+        image:'crispy-sandwiches.png',
+        rounded:'rounded-end',
+        order: 'order-0 order-md-1',
+        title:'Best deals  <span class="text-primary"> Crispy Sandwiches</span>',
+        text:'Enjoy the large size of sandwiches. Complete your meal with the perfect slice of sandwiches.'
+      },
+    ]
+
+mixin CrispySandwiches 
+  +Section.py-5 
+    .row 
+      .col-12
+        +CardText(sandwich[0])

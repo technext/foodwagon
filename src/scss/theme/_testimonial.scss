@@ -1,25 +1,52 @@
 
 
-// //*----------------------------- from bootstrap carousel ------------------*//
-.carousel-indicators {
-  position: static;
-  justify-content: start;
-  margin:  0;
-  
+// //*----------------------------- bootstrap carousel ------------------*//
 
- li{
-  border-radius: 50%;
-  border-radius: 10px;
- }
-
-  .active {
-    opacity: $carousel-indicator-active-opacity;
+.carousel-icon {
+  width: auto;
+  .carousel-control-prev-icon {
+   
+    &:hover {
+      background-color: $carousel-control-bg-color;
+    }
+  }
+  .carousel-control-next-icon {
+   
+    &:hover {
+      background-color: $carousel-control-bg-color;
+    }
+  }
+ 
+  // Icons for within
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    border-radius: 50%;
   }
 }
 
-.carousel-control-prev {
-  left: auto;
- 
-}
+// @include media-breakpoint-up(md) {
+//   .carousel-control-prev {
+//     left: -50px;
+//   }
+//   .carousel-control-next {
+//     right: -50px;
+//   }
+// }
+// @include media-breakpoint-up(lg) {
+//   .carousel-control-prev {
+//     left: 0;
+//   }
+//   .carousel-control-next {
+//     right: 0;
+//   }
+// }
+// @include media-breakpoint-up(xl) {
+//   .carousel-control-prev {
+//     left: -60px;
+//   }
+//   .carousel-control-next {
+//     right: -60px;
+//   }
+// }
 
 

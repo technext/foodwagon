@@ -1,0 +1,85 @@
+append variables
+  -
+    var sItems= [
+      {
+        image:'search-pizza.png',
+        title:'pizza',
+      },
+      {
+        image:'burger.png',
+        title:`Burger`,
+      },
+      {
+        image:'noodles.png',
+        title:'Noodles',
+      },
+      {
+        image:'sub-sandwich.png',
+        title:'Sub-sandwiches',
+      },
+      {
+        image:'chowmein.png',
+        title:'Chowmein',
+      },
+      {
+        image:'steak.png',
+        title:'Steak',
+      },
+
+    ];
+mixin SearchByFood(config)
+  .col-sm-6.col-md-4.col-xl.mb-5.h-100
+    .card.card-span.h-100.rounded-circle
+      img.img-fluid.rounded-circle.h-100(src=`${CWD}assets/img/gallery/${config.image}` alt='...')  
+      .card-body.ps-0
+        h5.text-center.fw-bold.text-1000.text-truncate.mb-2=config.title 
+  
+
+mixin SearchByFoods
+  +Section.py-8.overflow-hidden
+    .row.justify-content-between.mb-6
+      .col-md-11.col-lg-6.col-xl-4.col-xxl-5
+        h5.fw-bold.fs-3.fs-lg-5.lh-sm Search by Food
+      .col-lg-1.position-relative.mt-n5.mt-md-n4
+        button.carousel-control-prev.carousel-icon(type='button' data-bs-target='#carouselSearchByFood' data-bs-slide='prev')
+          span.carousel-control-prev-icon.hover-top-shadow(aria-hidden='true')
+          span.visually-hidden Previous
+        button.carousel-control-next.carousel-icon(type='button' data-bs-target='#carouselSearchByFood' data-bs-slide='next')
+          span.carousel-control-next-icon.hover-top-shadow(aria-hidden='true')
+          span.visually-hidden Next 
+    .row.flex-center
+      .col-12
+        #carouselSearchByFood.carousel.slide(data-bs-touch="false" data-bs-interval="false")
+          .carousel-inner
+            .carousel-item.active(data-bs-interval='10000')
+              .row.h-100.align-items-center            
+                +SearchByFood(sItems[0])                                                                    
+                +SearchByFood(sItems[1])                                                                    
+                +SearchByFood(sItems[2])                                                                    
+                +SearchByFood(sItems[3])                                                                    
+                +SearchByFood(sItems[4])                                                                    
+                +SearchByFood(sItems[5])                                                                    
+            .carousel-item(data-bs-interval='5000')
+              .row.h-100.align-items-center             
+                +SearchByFood(sItems[0])                                                                    
+                +SearchByFood(sItems[1])                                                                    
+                +SearchByFood(sItems[2])
+                +SearchByFood(sItems[3])                     
+                +SearchByFood(sItems[4])
+                +SearchByFood(sItems[5])                      
+            .carousel-item(data-bs-interval='3000')
+              .row.h-100.align-items-center                                 
+                +SearchByFood(sItems[0])                                                                    
+                +SearchByFood(sItems[1])                                                                    
+                +SearchByFood(sItems[2])
+                +SearchByFood(sItems[3])                       
+                +SearchByFood(sItems[4])
+                +SearchByFood(sItems[5])                        
+            .carousel-item
+              .row.h-100.align-items-center      
+                +SearchByFood(sItems[0])                                                                    
+                +SearchByFood(sItems[1])                                                                    
+                +SearchByFood(sItems[2]) 
+                +SearchByFood(sItems[3])   
+                +SearchByFood(sItems[4])
+                +SearchByFood(sItems[5]) 

@@ -1,9 +1,15 @@
 extends layouts/LayoutTheme
+include mixins/common/CardText
 include mixins/home/landing/HeroHeader
 include mixins/home/landing/Discount
 include mixins/home/landing/HowItWorks
 include mixins/home/landing/PopularItems
-include mixins/home/landing/ShopCategory
+include mixins/home/landing/FeaturedRestaurants
+include mixins/home/landing/SearchByFood
+include mixins/home/landing/CrispySandwiches
+include mixins/home/landing/FriedChicken
+include mixins/home/landing/SpicyPizza
+include mixins/home/landing/CtaOne
 include mixins/home/landing/Collection
 include mixins/home/landing/BestSellers
 include mixins/home/landing/Summer
@@ -24,6 +30,13 @@ append content
   +Discount
   +Features
   +PopularItems
+  +FeaturedRestaurants
+  +SearchByFoods
+  +CtaOne
+  +CrispySandwiches
+  +FriedChicken
+  +SpicyPizza
+
   //- +ExclusiveCollection
   //- +NewArrivals
   //- +ShopCategory

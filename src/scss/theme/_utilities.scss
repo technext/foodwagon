@@ -4,6 +4,7 @@
 
 $grays-with-brand-color: map-merge($brand-colors, $grays) !default;
 $theme-all-colors: map_merge($grays-with-brand-color, $theme-colors) !default;
+
 $utilities: () !default;
 $utilities: map_merge(
   (
@@ -21,13 +22,11 @@ $utilities: map_merge(
     ),
     "text": (
       property: color,
-      responsive: true,
       class: text,
       values: map_merge($brand-colors, $grays),
     ),
     "font-weight": (
       property: font-weight,
-      class: fw,
       values: (
         thin: $font-weight-thin,
         lighter: $font-weight-lighter,
@@ -41,7 +40,6 @@ $utilities: map_merge(
       ),
     ),
     "font-size": (
-      rfs: false,
       property: font-size,
       class: fs,
       responsive: true,
@@ -117,22 +115,22 @@ $utilities: map_merge(
         top-0: 0,
       ),
     ),
-    "border-end": (
+    "border-right": (
       property: border-right,
       responsive: true,
       class: border,
       values: (
-        end: $border-width solid $border-color,
-        end-0: 0,
+        right: $border-width solid $border-color,
+        right-0: 0,
       ),
     ),
-    "border-start": (
+    "border-left": (
       property: border-left,
       responsive: true,
       class: border,
       values: (
-        start: $border-width solid $border-color,
-        start-0: 0,
+        left: $border-width solid $border-color,
+        left-0: 0,
       ),
     ),
     "border-bottom": (
@@ -183,20 +181,20 @@ $utilities: map_merge(
         dashed-top: $border-width dashed $border-color,
       ),
     ),
-    "border-dashed-end": (
+    "border-dashed-right": (
       responsive: true,
       property: border-right,
       class: border,
       values: (
-        dashed-end: $border-width dashed $border-color,
+        dashed-right: $border-width dashed $border-color,
       ),
     ),
-    "border-dashed-start": (
+    "border-dashed-left": (
       responsive: true,
       property: border-left,
       class: border,
       values: (
-        dashed-start: $border-width dashed $border-color,
+        dashed-left: $border-width dashed $border-color,
       ),
     ),
     "border-dashed-bottom": (
@@ -225,7 +223,7 @@ $utilities: map_merge(
     ),
     "rounded-top": (
       responsive: true,
-      property: border-top-start-radius border-top-end-radius,
+      property: border-top-left-radius border-top-right-radius,
       class: rounded,
       values: (
         top: $border-radius,
@@ -233,19 +231,19 @@ $utilities: map_merge(
         top-0: 0,
       ),
     ),
-    "rounded-end": (
+    "rounded-right": (
       responsive: true,
-      property: border-top-end-radius border-bottom-end-radius,
+      property: border-top-right-radius border-bottom-right-radius,
       class: rounded,
       values: (
-        end: $border-radius,
-        end-lg: $border-radius-lg,
-        end-0: 0,
+        right: $border-radius,
+        right-lg: $border-radius-lg,
+        right-0: 0,
       ),
     ),
     "rounded-bottom": (
       responsive: true,
-      property: border-bottom-end-radius border-bottom-start-radius,
+      property: border-bottom-right-radius border-bottom-left-radius,
       class: rounded,
       values: (
         bottom: $border-radius,
@@ -253,14 +251,14 @@ $utilities: map_merge(
         bottom-0: 0,
       ),
     ),
-    "rounded-start": (
+    "rounded-left": (
       responsive: true,
-      property: border-bottom-start-radius border-top-start-radius,
+      property: border-bottom-left-radius border-top-left-radius,
       class: rounded,
       values: (
-        start: $border-radius,
-        start-lg: $border-radius-lg,
-        start-0: 0,
+        left: $border-radius,
+        left-lg: $border-radius-lg,
+        left-0: 0,
       ),
     ),
     "rounded-0": (

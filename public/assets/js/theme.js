@@ -369,12 +369,13 @@ var scrollToTop = function scrollToTop() {
       window.location.hash = id;
     });
   });
-}; // /* -------------------------------------------------------------------------- */
+}; // import navbarInit from './bootstrap-navbar';
+// /* -------------------------------------------------------------------------- */
 // /*                            Theme Initialization                            */
 // /* -------------------------------------------------------------------------- */
+// docReady(navbarInit);
 
 
-docReady(navbarInit);
 docReady(detectorInit);
 docReady(scrollToTop);
 //# sourceMappingURL=theme.js.map
