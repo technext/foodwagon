@@ -37,16 +37,21 @@ mixin SearchByFood(config)
 
 mixin SearchByFoods
   +Section.py-8.overflow-hidden
-    .row.justify-content-between.mb-6
-      .col-md-11.col-lg-6.col-xl-4.col-xxl-5
-        h5.fw-bold.fs-3.fs-lg-5.lh-sm Search by Food
-      .col-lg-1.position-relative.mt-n5.mt-md-n4
-        button.carousel-control-prev.carousel-icon(type='button' data-bs-target='#carouselSearchByFood' data-bs-slide='prev')
+    .row.flex-center.mb-6
+      .col-lg-7
+        h5.fw-bold.fs-3.fs-lg-5.lh-sm.text-center.text-lg-start Search by Food
+      .col-lg-4.text-lg-end.text-center
+        a.btn.btn-lg.text-800.me-2(href='#' role='button') VIEW ALL  
+          i.fas.fa-chevron-right.ms-2
+      .col-lg-auto.position-relative
+        button.carousel-control-prev.s-icon-prev.carousel-icon(type='button' data-bs-target='#carouselSearchByFood' data-bs-slide='prev')
           span.carousel-control-prev-icon.hover-top-shadow(aria-hidden='true')
           span.visually-hidden Previous
-        button.carousel-control-next.carousel-icon(type='button' data-bs-target='#carouselSearchByFood' data-bs-slide='next')
+        button.carousel-control-next.s-icon-next.carousel-icon(type='button' data-bs-target='#carouselSearchByFood' data-bs-slide='next')
           span.carousel-control-next-icon.hover-top-shadow(aria-hidden='true')
-          span.visually-hidden Next 
+          span.visually-hidden Next
+      
+
     .row.flex-center
       .col-12
         #carouselSearchByFood.carousel.slide(data-bs-touch="false" data-bs-interval="false")

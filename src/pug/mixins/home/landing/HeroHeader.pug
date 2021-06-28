@@ -1,5 +1,5 @@
 mixin HeroHeader
-  section.py-0.overflow-hidden.bg-primary#home
+  section.py-5.overflow-hidden.bg-primary#home
     .container
       .row.flex-center
         .col-md-5.col-lg-6.order-0.order-md-1.mt-8.mt-md-0
@@ -25,15 +25,19 @@ mixin HeroHeader
                 .tab-pane.fade.show.active#nav-home(role='tabpanel' aria-labelledby='nav-home-tab')
                   form.row.gx-4.gy-2.align-items-center
                     .col
-                      label.visually-hidden(for='specificSizeInputName') Address
-                      input.form-control#specificSizeInputName(type='text' placeholder='Enter Your Address')
+                      .input-group-icon
+                        i.fas.fa-map-marker-alt.text-danger.input-box-icon
+                        label.visually-hidden(for='inputDelivery') Address
+                        input.form-control#inputDelivery.input-box(type='text' placeholder='Enter Your Address')
                     .d-grid.gap-3.col-sm-auto
                       button.btn.btn-danger(type='submit') Find Food
                 .tab-pane.fade#nav-profile(role='tabpanel' aria-labelledby='nav-profile-tab') 
                   form.row.gx-4.gy-2.align-items-center
                     .col
-                      label.visually-hidden(for='specificSizeInputName') Address
-                      input.form-control#specificSizeInputName(type='text' placeholder='Enter Your Address')
+                      .input-group-icon
+                        i.fas.fa-map-marker-alt.text-danger.input-box-icon
+                        label.visually-hidden(for='inputPickup') Address
+                        input.form-control#inputPickup.input-box(type='text' placeholder='Enter Your Address')
                     .d-grid.gap-3.col-sm-auto
                       button.btn.btn-danger(type='submit') Find Food
                           

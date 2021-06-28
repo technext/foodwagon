@@ -24,29 +24,46 @@
   }
 }
 
-// @include media-breakpoint-up(md) {
-//   .carousel-control-prev {
-//     left: -50px;
-//   }
-//   .carousel-control-next {
-//     right: -50px;
-//   }
-// }
-// @include media-breakpoint-up(lg) {
-//   .carousel-control-prev {
-//     left: 0;
-//   }
-//   .carousel-control-next {
-//     right: 0;
-//   }
-// }
-// @include media-breakpoint-up(xl) {
-//   .carousel-control-prev {
-//     left: -60px;
-//   }
-//   .carousel-control-next {
-//     right: -60px;
-//   }
-// }
+@include media-breakpoint-up(md) {
+  .carousel-control-prev {
+    left: -50px;
+  }
+  .carousel-control-next {
+    right: -50px;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .carousel-control-prev {
+    left: 0;
+  }
+  .carousel-control-next {
+    right: 0;
+  }
+}
+@include media-breakpoint-up(xl) {
+  .carousel-control-prev {
+    left: -60px;
+  }
+  .carousel-control-next {
+    right: -60px;
+  }
+}
 
+// search by food
 
+@include media-breakpoint-up(md) {
+  .carousel-control-prev.s-icon-prev {
+    left: -50px;
+  }
+  .carousel-control-next.s-icon-next {
+    right: -50px;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .carousel-control-prev.s-icon-prev {
+    left: -30px;
+  }
+  .carousel-control-next.s-icon-next {
+    right: -30px;
+  }
+}

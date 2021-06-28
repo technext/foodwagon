@@ -317,7 +317,7 @@ $blockquote-font-size: $font-size-lg !default;
 //|   Buttons and Forms
 //-----------------------------------------------*/
 $input-bg           :  tint-color($gray-300, 90) !default;
-$input-placeholder-color:    $gray-1000 !important;
+$input-placeholder-color:    $gray-500 !important;
 $input-btn-padding-y: .5rem !default;
 $input-btn-padding-x: 2.2rem !default;
 
@@ -443,4 +443,5 @@ $carousel-control-icon-width:        2.5rem !default;
 $nav-tabs-link-active-color:        $orange !default;
 $nav-tabs-link-active-border-color: transparent !default;
 $nav-tabs-link-active-bg:          rgba($orange, 0.15) !default;
+$nav-link-color:                    $gray-700 !default;
 
