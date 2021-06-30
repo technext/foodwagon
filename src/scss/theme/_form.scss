@@ -19,22 +19,11 @@
 // General form controls (plus a few specific high-level interventions)
 //
 
-.form-voyage-control {
-  background-color: $white;
-  background-clip: padding-box;
+.form-foodwagon-control {
   border: 0 solid $input-border-color;
-  border-bottom: 1px solid $gray-500;
-  border-radius: 0;
-  color: $gray-1000;
+  border-radius: 0.25rem;
 }
 
-.form-voyage-select{
-  color: $gray-1000;
-  background-color: $white;
-  border: 0 solid $form-select-border-color;
-  border-bottom: 1px solid $gray-500;
-  border-radius: 0; 
-}
 
 
 // Calaendar icon

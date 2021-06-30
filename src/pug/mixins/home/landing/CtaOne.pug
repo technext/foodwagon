@@ -4,23 +4,25 @@ mixin CtaOne
     .container 
       .row.justify-content-center
         .col-xxl-10
-          .card.card-span.shadow-warning.rounded-3
-            .card-body
+          .card.card-span.shadow-warning(style="border-radius: 35px;")
+            .card-body.py-5
               .row.justify-content-evenly
                 .col-md-3
-                  .d-flex.d-md-block.d-xl-flex.justify-content-evenly.mt-4
+                  .d-flex.d-md-block.d-xl-flex.justify-content-evenly.justify-content-lg-between
                     img(src=`${CWD}assets/img/icons/discounts.png` width='100'  alt='...') 
                     .d-flex.d-lg-block.d-xl-flex.flex-center
                       h2.fw-bolder.text-1000.mb-0.text-gradient Daily
                         br.d-none.d-md-block
-                        | Discounts      
-                .col-md-3
-                  .d-flex.d-md-block.d-xl-flex.justify-content-evenly.mt-4
+                        | Discounts  
+                      
+                .col-md-3.hr-vertical
+                  .d-flex.d-md-block.d-xl-flex.justify-content-evenly.justify-content-lg-between
                     img(src=`${CWD}assets/img/icons/live-tracking.png` width='100' alt='...') 
                     .d-flex.d-lg-block.d-xl-flex.flex-center
                       h2.fw-bolder.text-1000.mb-0.text-gradient Live Tracking
-                .col-md-3
-                  .d-flex.d-md-block.d-xl-flex.justify-content-evenly.mt-4
+
+                .col-md-3.hr-vertical
+                  .d-flex.d-md-block.d-xl-flex.justify-content-evenly.justify-content-lg-between
                     img(src=`${CWD}assets/img/icons/quick-delivery.png` width='100' alt='...') 
                     .d-flex.d-lg-block.d-xl-flex.flex-center
                       h2.fw-bolder.text-1000.mb-0.text-gradient Quick Delivery 

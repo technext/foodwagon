@@ -99,12 +99,12 @@ mixin FeaturedRestaurant(config)
       img.img-fluid.rounded-3(src=`${CWD}assets/img/gallery/${config.image}` alt='...').h-100
       .card-img-overlay.ps-0
         span.badge.bg-danger.p-2.ms-3
-          i.fas.fa-tag.me-2
-          span=config.discount
+          i.fas.fa-tag.me-2.fs-0
+          span.fs-0=config.discount
           
         span.badge.bg-primary.ms-2.me-1.p-2
-          i.fas.fa-clock.me-1
-          span=config.time      
+          i.fas.fa-clock.me-1.fs-0
+          span.fs-0=config.time      
       .card-body.ps-0 
         .d-flex.align-items-center.mb-3
             img(src=`${CWD}assets/img/gallery/${config.logo}` alt='').img-fluid

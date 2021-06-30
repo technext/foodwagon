@@ -316,7 +316,7 @@ $blockquote-font-size: $font-size-lg !default;
 //*-----------------------------------------------
 //|   Buttons and Forms
 //-----------------------------------------------*/
-$input-bg           :  tint-color($gray-300, 90) !default;
+$input-bg           :  $gray-200 !default;
 $input-placeholder-color:    $gray-500 !important;
 $input-btn-padding-y: .5rem !default;
 $input-btn-padding-x: 2.2rem !default;
@@ -335,8 +335,8 @@ $btn-font-weight: $font-weight-bold!default;
 $btn-focus-width: 0 !default;
 
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius: 0.313rem !default;
-$btn-border-radius-lg: 0 !default;
+$btn-border-radius: 0.2rem !default;
+$btn-border-radius-lg: 0.35rem !default;
 
 //*-----------------------------------------------
 //|   Navigation

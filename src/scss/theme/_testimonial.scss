@@ -24,6 +24,15 @@
   }
 }
 
+@include media-breakpoint-up(sm) {
+  .carousel-control-prev {
+    left: -35px;
+  }
+  .carousel-control-next {
+    right: -35px;
+  }
+}
+
 @include media-breakpoint-up(md) {
   .carousel-control-prev {
     left: -50px;
@@ -42,10 +51,18 @@
 }
 @include media-breakpoint-up(xl) {
   .carousel-control-prev {
-    left: -60px;
+    left: -55px;
   }
   .carousel-control-next {
-    right: -60px;
+    right: -55px;
+  }
+}
+@include media-breakpoint-up(xxl) {
+  .carousel-control-prev {
+    left: -70px;
+  }
+  .carousel-control-next {
+    right: -70px;
   }
 }
 
@@ -53,10 +70,10 @@
 
 @include media-breakpoint-up(md) {
   .carousel-control-prev.s-icon-prev {
-    left: -50px;
+    left: -20px;
   }
   .carousel-control-next.s-icon-next {
-    right: -50px;
+    right: -20px;
   }
 }
 @include media-breakpoint-up(lg) {

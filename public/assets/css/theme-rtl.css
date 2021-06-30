@@ -2543,7 +2543,7 @@ progress {
   font-weight: 400;
   line-height: 1.5;
   color: #424242;
-  background-color: #fdfdfd;
+  background-color: #F5F5F5;
   background-clip: padding-box;
   border: 1px solid #E0E0E0;
   -webkit-appearance: none;
@@ -2575,7 +2575,7 @@ progress {
 
 .form-control:focus {
   color: #424242;
-  background-color: #fdfdfd;
+  background-color: #F5F5F5;
   border-color: #ffd987;
   outline: 0;
   -webkit-box-shadow: 0 0 0 0.25rem rgba(255, 179, 14, 0.25);
@@ -2777,7 +2777,7 @@ textarea.form-control-lg {
   font-weight: 400;
   line-height: 1.5;
   color: #424242;
-  background-color: #fdfdfd;
+  background-color: #F5F5F5;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23616161' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: left 2.2rem center;
@@ -2841,7 +2841,7 @@ textarea.form-control-lg {
   height: 1em;
   margin-top: 0.25em;
   vertical-align: top;
-  background-color: #fdfdfd;
+  background-color: #F5F5F5;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -3479,7 +3479,7 @@ textarea.form-control-lg {
   border: 1px solid transparent;
   padding: 0.5rem 2.2rem;
   font-size: 1rem;
-  border-radius: 0.313rem;
+  border-radius: 0.2rem;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -4133,7 +4133,7 @@ fieldset:disabled .btn {
 .btn-lg, .btn-group-lg > .btn {
   padding: 0.5rem 2.8rem;
   font-size: 1rem;
-  border-radius: 0;
+  border-radius: 0.35rem;
 }
 
 .btn-sm, .btn-group-sm > .btn {
@@ -4844,7 +4844,7 @@ fieldset:disabled .btn {
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
-  border-radius: 0.313rem;
+  border-radius: 0.2rem;
   -webkit-transition: -webkit-box-shadow 0.15s ease-in-out;
   transition: -webkit-box-shadow 0.15s ease-in-out;
   -o-transition: box-shadow 0.15s ease-in-out;
@@ -17665,26 +17665,8 @@ ul {
   border-right-width: 0.125rem !important;
 }
 
-.border-klean {
-  border-style: solid;
-  -o-border-image: -o-linear-gradient(right, rgba(180, 210, 255, 0) 1%, #c7d9f5 50%, rgba(180, 210, 255, 0) 100%) 100% 0 100% 0/1px 0 1px 0 stretch;
-  border-image: -webkit-gradient(linear, right top, left top, color-stop(1%, rgba(180, 210, 255, 0)), color-stop(50%, #c7d9f5), to(rgba(180, 210, 255, 0))) 100% 0 100% 0/1px 0 1px 0 stretch;
-  border-image: linear-gradient(to left, rgba(180, 210, 255, 0) 1%, #c7d9f5 50%, rgba(180, 210, 255, 0) 100%) 100% 0 100% 0/1px 0 1px 0 stretch;
-}
-
-.border-img {
-  border: 2px solid #FFFEFE;
-  border-radius: 5rem;
-}
-
-.border-klean-gradient {
-  border: double .5rem transparent;
-  border-radius: 80px;
-  background-image: -webkit-gradient(linear, right top, right bottom, from(white), to(white)), -webkit-gradient(linear, right top, left top, from(#c381db), to(#4e92f9));
-  background-image: -o-linear-gradient(white, white), -o-linear-gradient(right, #c381db, #4e92f9);
-  background-image: linear-gradient(white, white), linear-gradient(to left, #c381db, #4e92f9);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
+.hr-vertical {
+  border-right: 2px solid #CFCFCF;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -17872,6 +17854,11 @@ ul {
 .shadow-warning {
   -webkit-box-shadow: 0 0 3rem 0 rgba(255, 179, 14, 0.3) !important;
   box-shadow: 0 0 3rem 0 rgba(255, 179, 14, 0.3) !important;
+}
+
+.shadow-icon {
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(255, 179, 14, 0.3));
+  filter: drop-shadow(5px 5px 5px rgba(255, 179, 14, 0.3));
 }
 
 /*-----------------------------------------------
@@ -18212,26 +18199,6 @@ ul {
   box-shadow: 0 10px 20px #D42DA3, 0 6px 6px #FFB30E;
 }
 
-.btn-theme-outline {
-  position: relative;
-}
-
-.btn-theme-outline::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background-image: inherit;
-  background-size: auto;
-  background: -o-linear-gradient(-40deg, #FFB30E, #FFB30E);
-  background: linear-gradient(-50deg, #FFB30E, #FFB30E);
-  -webkit-mask: url('data:image/svg+xml;utf8,<svg  xmlns="http://www.w3.org/2000/svg" ><rect x="1" y="1" width="100%" height="100%" style="height:calc(100% - 2px);width:calc(100% - 2px)" rx="6" ry="6" stroke-width="1" fill="transparent" stroke="white"/></svg>') 0/100% 100%;
-  mask: url('data:image/svg+xml;utf8,<svg  xmlns="http://www.w3.org/2000/svg" ><rect x="1" y="1" width="100%" height="100%" style="height:calc(100% - 2px);width:calc(100% - 2px)" rx="6" ry="6" stroke-width="1" fill="transparent" stroke="white"/></svg>') 0/100% 100%;
-}
-
 .btn {
   color: #FFFEFE;
 }
@@ -18361,6 +18328,15 @@ ul {
   border-radius: 50%;
 }
 
+@media (min-width: 576px) {
+  .carousel-control-prev {
+    right: -35px;
+  }
+  .carousel-control-next {
+    left: -35px;
+  }
+}
+
 @media (min-width: 768px) {
   .carousel-control-prev {
     right: -50px;
@@ -18381,19 +18357,28 @@ ul {
 
 @media (min-width: 1200px) {
   .carousel-control-prev {
-    right: -60px;
+    right: -55px;
   }
   .carousel-control-next {
-    left: -60px;
+    left: -55px;
+  }
+}
+
+@media (min-width: 1540px) {
+  .carousel-control-prev {
+    right: -70px;
+  }
+  .carousel-control-next {
+    left: -70px;
   }
 }
 
 @media (min-width: 768px) {
   .carousel-control-prev.s-icon-prev {
-    right: -50px;
+    right: -20px;
   }
   .carousel-control-next.s-icon-next {
-    left: -50px;
+    left: -20px;
   }
 }
 
@@ -18439,21 +18424,9 @@ ul {
   transform: translateY(-50%);
 }
 
-.form-voyage-control {
-  background-color: #FFFEFE;
-  background-clip: padding-box;
+.form-foodwagon-control {
   border: 0 solid #E0E0E0;
-  border-bottom: 1px solid #BDBDBD;
-  border-radius: 0;
-  color: #212121;
-}
-
-.form-voyage-select {
-  color: #212121;
-  background-color: #FFFEFE;
-  border: 0 solid #E0E0E0;
-  border-bottom: 1px solid #BDBDBD;
-  border-radius: 0;
+  border-radius: 0.25rem;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {

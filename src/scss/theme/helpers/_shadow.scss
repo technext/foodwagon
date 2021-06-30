@@ -24,3 +24,7 @@
 .shadow-warning {
   box-shadow: 0 0 3rem 0 rgba($warning, 0.3)!important;
 }
+
+.shadow-icon{
+  filter: drop-shadow(5px 5px 5px  rgba($warning, 0.3));
+}

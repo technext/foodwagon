@@ -26,7 +26,7 @@ append variables
 mixin Feature(config)
   .col-sm-6.col-md-3.mb-6
     .text-center
-      img.img-fluid(src=`${CWD}assets/img/gallery/${config.icon}` height='112' alt='...')
+      img.shadow-icon(src=`${CWD}assets/img/gallery/${config.icon}` height='112' alt='...')
       h5.mt-4.fw-bold=config.title
       p.mb-md-0=config.text
 
